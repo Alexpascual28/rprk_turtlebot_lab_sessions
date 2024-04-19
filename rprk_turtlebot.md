@@ -581,7 +581,7 @@ For the Arduino:
 * C++ Standard Library
 * ARB library (included, explained below)
 
-on the Raspberry Pi:
+On the Raspberry Pi:
 
 * Python 3.6 or above
 * Python Packages: `numpy`, `picamera`, `picamera.array`, `cv2`, `aruco`, `matplotlib`, `ctypes`, `csv`, `os`, `threading`
@@ -675,6 +675,16 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
       * **User Name**: Your SSID for the Raspberry Pi. In lab devices: ***pi***.
       * **Password**: Your password for the Raspberry Pi. In lab devices: ***raspberry***.
    3. Click "Login". After a connection is established you should be able to see the files in the Pi.
+
+7. Upload all project files to the Raspberry Pi using WinSCP.
+
+8. Install Python dependencies with the CLI in SSH PuTTY:
+
+   All of the Python libraries can be installed using pip:
+
+   ```bash
+   pip install numpy opencv-python picamera matplotlib ...
+   ```
 
 ###  Usage
 
