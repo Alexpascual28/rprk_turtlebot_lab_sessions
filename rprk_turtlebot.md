@@ -688,27 +688,134 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
 
 ###  Usage
 
-<h4>From <code>source</code></h4>
+**Running the Code**
 
-> Run rprk_turtlebot_lab_sessions using the command below:
-> ```console
-> $ python main.py
-> ```
+To run Arduino files, upload the respective `.ino` files to the Arduino Nano using the Arduino IDE.
 
-###  Tests
+For the Raspberry Pi, navigate to the specific lab or showcase directory and run the Python scripts through the terminal:
 
-> Run the test suite using the command below:
-> ```console
-> $ pytest
-> ```
+```bash
+python3 <script_name>.py
+```
+
+Ensure that the `ARBPi` file and the `Turtlebot` files or other dependencies are located in the same folder when running a script that requires their functions.
+
+Ensure that the Raspberry Pi and ARB are connected via UART, as the scripts and sketches often communicate over this channel.
 
 ---
 
-##  Project Roadmap
+##  ARB and ARBPi
 
-- [X] `► INSERT-TASK-1`
-- [ ] `► INSERT-TASK-2`
-- [ ] `► ...`
+The ARB (Arduino Robotics Board) and ARBPi libraries are crucial for communication between the Arduino and Raspberry Pi. They handle low-level operations like reading and writing to registers that control motors, read sensors, and manage other peripherals.
+
+### ARB library
+
+The ARB (Arduino Robotics Board) library is designed to simplify the interaction between the hardware components on the ARB and the software controlling it, either standalone or in conjunction with a Raspberry Pi. This library is integral for controlling the motors, sensors, and serial communication in your robotics projects.
+
+**Key Components of the ARB Library**
+
+*Header File (`ARB.h`)*:
+
+* Defines all the necessary pins used by the ARB with easy-to-understand names such as **MOTOR_DIRA** for motor direction control and **USONIC1** to **USONIC4** for ultrasonic sensors.
+* It includes standard Arduino headers and defines constants for the **I2C multiplexer address** and various **GPIO** pins.
+* Declares an external array `reg_array` of 128 bytes to manage data communication between the Raspberry Pi and the Arduino.
+* Provides function prototypes for initialization (`ARBSetup`), register manipulation (`getRegister`, `putRegister`), and I2C bus management (`setI2CBus`).
+
+*Source File (`ARB.cpp`)*:
+
+* Implements the functions declared in the header. The `ARBSetup` function initializes **I2C** communication and optionally the serial communication depending on the passed parameter.
+* The `getRegister` and `putRegister` functions manage data in the `reg_array`, facilitating communication between the Arduino and any connected device like the Raspberry Pi.
+* The `setI2CBus` function controls which bus on the **I2C multiplexer** is active, allowing the selection of different sensor sets connected to the Arduino.
+* Provides a utility function `uSecToCM` to convert time (in microseconds) to distance (in centimeters), which is useful for ultrasonic distance measurements.
+
+**`getRegister` and `putRegister` Functions in the ARB Library**
+
+The `getRegister` and `putRegister` functions are crucial components of the ARB library, allowing for efficient data communication between the Arduino and other devices, such as the Raspberry Pi. These functions manage data within an array named `reg_array`, which acts as a collection of registers used to store and retrieve data dynamically during runtime.
+
+*`getRegister` Function*
+
+The `getRegister` function is designed to access data from the `reg_array`. Here's how it works:
+
+* **Prototype**: char getRegister(int reg);
+* **Parameters**: It takes a single integer reg, which represents the index of the register in the * reg_array from which data is to be retrieved.
+* **Returns**: The function returns a char value, which is the data stored at the specified register index.
+
+   **Code Snippet**:
+
+   ```cpp
+   Copy code
+   char getRegister(int reg){
+      return reg_array[reg];
+   }
+   ```
+
+   **Usage**:
+
+   This function is typically used when you need to read a value from a specific register that may have been written to by another part of your program or from an external device like the Raspberry Pi. For instance, you might store sensor data or configuration settings in these registers.
+
+*`putRegister` Function*
+
+The `putRegister` function allows writing data to a specific register in the `reg_array`. Here’s a detailed look:
+
+* **Prototype**: void putRegister(int reg, char data);
+* **Parameters**:
+   * `int reg`: The index of the register where the data will be stored.
+   * `char data`: The data to be stored in the register.
+
+   **Code Snippet**:
+
+   ```cpp
+   Copy code
+   void putRegister(int reg, char data){
+      reg_array[reg] = data;
+   }
+   ```
+
+   **Usage**:
+
+   This function is crucial for updating the contents of a register, which could influence the behavior of the robot or other parts of the system. For example, it could be used to update control parameters, set desired motor speeds, or store temporary data needed for computations.
+
+**Example Usage**
+
+Here’s a basic example of how the ARB library functions might be used in an Arduino sketch:
+
+```cpp
+#include <ARB.h>
+
+void setup() {
+    ARBSetup(true); // Initialize with serial communication enabled
+}
+
+void loop() {
+    // Example of setting a register value
+    putRegister(0, 120); // Put 120 in register 0
+
+    // Example of reading a register value
+    char val = getRegister(0);
+
+    // Use the infrared sensor connected to I2C bus 1
+    setI2CBus(1);
+}
+```
+
+Here is how you might use both getRegister and putRegister in a practical scenario:
+
+```cpp
+void setup() {
+    ARBSetup(); // Initialize ARB without serial communication
+}
+
+void loop() {
+    // Setting a register value to store a motor speed setting
+    putRegister(10, 50);  // Assume register 10 is designated for motor speed
+
+    // Later in the loop, or in another function, you retrieve this motor speed
+    char motorSpeed = getRegister(10);
+
+    // Use the motor speed to control a motor
+    analogWrite(MOTOR_PWMA, motorSpeed);  // Assuming MOTOR_PWMA controls a motor's speed
+}
+```
 
 ---
 
