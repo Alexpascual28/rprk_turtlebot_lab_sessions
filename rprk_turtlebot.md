@@ -743,7 +743,6 @@ The `getRegister` function is designed to access data from the `reg_array`. Here
    **Code Snippet**:
 
    ```cpp
-   Copy code
    char getRegister(int reg){
       return reg_array[reg];
    }
@@ -765,7 +764,6 @@ The `putRegister` function allows writing data to a specific register in the `re
    **Code Snippet**:
 
    ```cpp
-   Copy code
    void putRegister(int reg, char data){
       reg_array[reg] = data;
    }
