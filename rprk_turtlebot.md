@@ -674,6 +674,7 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
       * **Port**: *22*
       * **User Name**: Your SSID for the Raspberry Pi. In lab devices: ***pi***.
       * **Password**: Your password for the Raspberry Pi. In lab devices: ***raspberry***.
+   3. Click "Login". After a connection is established you should be able to see the files in the Pi.
 
 ###  Usage
 
