@@ -590,7 +590,7 @@ On your computer:
 
 * PuTTY: To establish comms with the Pi using *SSH*. (or equivalent)
 * WinSCP: For FTP comms and file transfer. (or equivalent)
-* XMing: To forward camera image information. (or equivalent)
+* XMing: To forward camera image data. (or equivalent)
 
 **Hardware**
 
@@ -628,29 +628,52 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
 
 2. Install the ARB Library on your Arduino:
    1. In the *Arduino IDE*, go to the menu bar and select **Sketch** > **Include Library** > **Add .ZIP Library....**
-   2. Navigate to where you have saved your **"ARB.zip"** file.
+   2. Zip the ARB directory and navigate to where you have saved your **"ARB.zip"** file.
    3. Select the file and click on **'Open'**. The IDE will then install the library.
    4. Verify Installation:
       - To check if the library has been successfully installed, go back to **Sketch** > **Include Library**. You should see the library named "ARB" at the bottom of the drop-down menu.
       - Click on it to include the library in your current sketch, which should automatically insert an include statement like `#include <ARB.h>` at the top of your sketch.
 
-3. Open a connection to the Raspberry Pi using PuTTY or directly through HDMI. (Windows instructions) Further instructions in [Lab 1](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions/blob/main/Lab1/autumn_lab_1.pdf):
+3. Open a connection to the Raspberry Pi using PuTTY or directly through HDMI. (Windows instructions). Further instructions in [Lab 1](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions/blob/main/Lab1/autumn_lab_1.pdf):
    1. Connect to the Raspberry Pi with your laptop using the serial **USB to UART HAT** and a USB cable.
    2. Check what *COM* port the device is connected to using "Device Manager"
-   3. Establish a `serial` connection with PuTTY using the device *COM* port and baud rate 115200.
+   3. Establish a `Serial` connection with PuTTY using the device *COM* port and baud rate 115200.
    
    Alternatively, you can connect a screen and keyboard directly to the Raspberry Pi to access the terminal directly.
 
+   4. Login using your login details for the Raspberry Pi in CLI. For the lab RPRK devices, the details are the following:
+      * **SSID:** *pi*
+      * **Password:** *raspberry*
+
 4. Connect the Pi to a local WiFi network and check the device's IP address on the network.
-   1. Type `sudo raspi-config` in the commad line to open the configuration screen
+   1. Type `sudo raspi-config` in the command line to open the configuration screen.
    2. Go to **“2: Network Options”** and then **“N2 Wireless LAN”** and enter the SSID and passphrase for your network.
    3. Go to "Finish" and wait a few moments for the Raspberry Pi to connect.
-   4. Type `ifconfig` on the terminal
+   4. Type `ifconfig` on the terminal.
+   5. Look for the section called *wlan0*. You should see your IP address there (e.g 144.32.70.210).
+   6. Take note of your IP, it can be used to connect to the board through SSH or to transfer files with FTP. You can now close the serial PuTTY or direct connection.
 
+5. Connect through SSH using PuTTY (Windows instructions)
+   1. Open PuTTY again.
+   2. Establish an `SSH` connection using host name *"username@ip_address"* (e.g pi@144.32.70.210) and port 22, using the previously established IP address.
+   3. To forward camera image data from the Pi to your computer, you must:
+      * Have [XMing](http://www.straightrunning.com/XmingNotes/) installed in your device. Further instructions in [Lab 6](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions/blob/main/Lab6/autumn_lab_6.pdf)
+      * Execute XMing before establishing a connection. It will run in the background.
+      * In PuTTY, go to **Connections** > **SSH** > **X11** and check the box that says *'Enable X-11 forwarding'*.
+   4. If you wish, save the session under your preferred name by going to **Session** > **"Load, save or delete a stored session"**. Write your session name under *Saved Sessions* and click **"Save"**.
+   5. Click **"Open"** at the bottom-right of the window.
+   6. Login using your login details for the Raspberry Pi in CLI. For the lab RPRK devices, the details are the following:
+      * **SSID:** *pi*
+      * **Password:** *raspberry*
 
-
-
-   
+6. View, add and modify files using WinSCP (Windows instructions). Further instructions in [Lab 1](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions/blob/main/Lab1/autumn_lab_1.pdf)
+   1. Open WinSCP
+   2. Create a "New Site" with the following details:
+      * **File Protocol**: *SFTP*
+      * **Host Name**: The device's IP address for the network in format *XXX.XX.XX.XXX* (e.g *144.32.70.210*). Refer to step 4 in [Installation](#installation).
+      * **Port**: *22*
+      * **User Name**: Your SSID for the Raspberry Pi. In lab devices: ***pi***.
+      * **Password**: Your password for the Raspberry Pi. In lab devices: ***raspberry***.
 
 ###  Usage
 
