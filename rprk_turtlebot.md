@@ -611,7 +611,7 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
 
 ###  Installation
 
-1. Clone the repository to your local machine or download the entire project directory.
+1. **Clone the repository** to your local machine or **download the entire project directory**.
 
    <h4>From <code>source</code></h4>
 
@@ -626,7 +626,7 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
    > $ cd rprk_turtlebot_lab_sessions
    > ```
 
-2. Install the ARB Library on your Arduino:
+2. **Install the ARB Library** on your Arduino:
    1. In the *Arduino IDE*, go to the menu bar and select **Sketch** > **Include Library** > **Add .ZIP Library....**
    2. Zip the ARB directory and navigate to where you have saved your **"ARB.zip"** file.
    3. Select the file and click on **'Open'**. The IDE will then install the library.
@@ -634,7 +634,7 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
       - To check if the library has been successfully installed, go back to **Sketch** > **Include Library**. You should see the library named "ARB" at the bottom of the drop-down menu.
       - Click on it to include the library in your current sketch, which should automatically insert an include statement like `#include <ARB.h>` at the top of your sketch.
 
-3. Open a connection to the Raspberry Pi using PuTTY or directly through HDMI. (Windows instructions). Further instructions in [Lab 1](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions/blob/main/Lab1/autumn_lab_1.pdf):
+3. **Open a connection to the Raspberry Pi** using PuTTY or directly through HDMI. (Windows instructions). Further instructions in [Lab 1](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions/blob/main/Lab1/autumn_lab_1.pdf):
    1. Connect to the Raspberry Pi with your laptop using the serial **USB to UART HAT** and a USB cable.
    2. Check what *COM* port the device is connected to using "Device Manager"
    3. Establish a `Serial` connection with PuTTY using the device *COM* port and baud rate 115200.
