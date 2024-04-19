@@ -710,7 +710,7 @@ The ARB (Arduino Robotics Board) and ARBPi libraries are crucial for communicati
 
 ### ARB library
 
-The ARB (Arduino Robotics Board) library is designed to simplify the interaction between the hardware components on the ARB and the software controlling it, either standalone or in conjunction with a Raspberry Pi. This library is integral for controlling the motors, sensors, and serial communication in your robotics projects.
+The ARB (Arduino Robotics Board) library runs in the Arduino Nano and is designed to simplify the interaction between the hardware components on the ARB and the software controlling it, in conjunction with a Raspberry Pi. This library is integral for controlling the motors, sensors, and serial communication in your robotics projects.
 
 **Key Components of the ARB Library**
 
@@ -814,6 +814,101 @@ void loop() {
     analogWrite(MOTOR_PWMA, motorSpeed);  // Assuming MOTOR_PWMA controls a motor's speed
 }
 ```
+
+### ARBPi library
+
+**Purpose and Functionality:**
+
+The ARBPi library runs in the Raspberry Pi  and provides serial communication between the Raspberry Pi and the Arduino boards. The library offers a dual-interface, supporting both C++ and Python, thereby accommodating a wide range of programming preferences and project requirements.
+
+**Technical Stack and Integration:**
+
+**C++ Components**: Core functionalities are implemented in C++, ensuring high performance and direct access to low-level system resources.
+
+**Python Interface**: Python bindings are provided to leverage the ease of scripting and rapid development capabilities of Python, making it ideal for higher-level applications and quick testing.
+
+**Key Components:**
+
+*C++ Source Files (`ARBPi.cpp` and `ARBPi.h`)*:
+   - `ARBPi.cpp`: Contains the implementation of serial communication functions such as setting up the serial port, reading and writing to registers on the **Arduino**.
+   - `ARBPi.h`: Header file that declares the functions and constants used by `ARBPi.cpp`.
+
+*Python Module (`ARBPi.py`)*:
+   Wraps the **C++** library using **Python’s** ctypes module, providing Pythonic access to the underlying serial communication functions.
+
+*Compiled Library (`libARBPi.so`)*:
+   A shared library compiled from the **C++** code, enabling dynamic linking from Python or other **C++** programs.
+
+*Test Files (`serialtest`, `serialTest.cpp`, and `serialTest.py`)*:
+   Executable and scripts for testing the functionality of the library to ensure proper operation of serial communications.
+
+*Libraries and Dependencies*:
+   - `wiringPi`: Used in the **C++** code for handling **GPIO** and serial communications on the Raspberry Pi.
+   - `ctypes`: Utilized in the **Python** script to interface with the **C++** shared library.
+
+**Setup and Usage Instructions:**
+
+*Compiling C++ Code:*
+
+To compile the C++ part of the library, you would use g++ with appropriate flags to link against necessary libraries, such as wiringPi:
+
+```bash
+g++ -o ARBPi ARBPi.cpp -lwiringPi
+```
+
+*Running Python Scripts:*
+
+Ensure Python is installed along with ctypes. The Python script can be run by importing it to your code as follows:
+
+```python
+from ARBPi import *
+```
+
+**Initialization Process:**
+
+C++ and Python interfaces include an initialization function to set up the serial connection:
+```cpp
+void ARBPiSetup() {
+    serialDevice = serialOpen(SERIAL, 115200);
+}
+```
+```python
+Copy code
+def ARBPiSetup(serialPath="/dev/ttyUSB0"):
+    _ARBPi.ARBPiSetup(ctypes.c_char_p(serialPath.encode('ascii')))
+```
+
+Reading and Writing Registers:
+
+To read a register:
+```cpp
+char getRegister(int reg) {
+    serialPutchar(serialDevice, reg);
+    while(serialDataAvail(serialDevice) < 1) {}
+    return serialGetchar(serialDevice);
+}
+```
+```python
+Copy code
+def getRegister(reg):
+    return int(_ARBPi.getRegister(ctypes.c_int(reg)))
+```
+
+To write to a register:
+```cpp
+Copy code
+void putRegister(int reg, char data) {
+    serialPutchar(serialDevice, reg + 128);
+    serialPutchar(serialDevice, data);
+}
+```
+```python
+Copy code
+def putRegister(reg, data):
+    _ARBPi.putRegister(ctypes.c_int(reg), ctypes.c_byte(data))
+```
+
+These snippets illustrate the direct interaction with hardware through serial interfaces, encapsulating complex operations into simple, reusable API calls.
 
 ---
 
