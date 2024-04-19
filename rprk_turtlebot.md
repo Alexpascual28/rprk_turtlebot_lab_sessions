@@ -613,18 +613,18 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
 
 1. Clone the repository to your local machine or download the entire project directory.
 
-<h4>From <code>source</code></h4>
+   <h4>From <code>source</code></h4>
 
-> 1. Clone the rprk_turtlebot_lab_sessions repository:
->
-> ```console
-> $ git clone https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git
-> ```
->
-> 2. Change to the project directory:
-> ```console
-> $ cd rprk_turtlebot_lab_sessions
-> ```
+   > 1. Clone the rprk_turtlebot_lab_sessions repository:
+   >
+   > ```console
+   > $ git clone https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git
+   > ```
+   >
+   > 2. Change to the project directory:
+   > ```console
+   > $ cd rprk_turtlebot_lab_sessions
+   > ```
 
 2. Install the ARB Library on your Arduino:
    1. In the *Arduino IDE*, go to the menu bar and select **Sketch** > **Include Library** > **Add .ZIP Library....**
@@ -645,7 +645,7 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
       * **SSID:** *pi*
       * **Password:** *raspberry*
 
-4. Connect the Pi to a local WiFi network and check the device's IP address on the network.
+4. **Connect the Pi to a local WiFi** network and **check the device's IP address** on the network.
    1. Type `sudo raspi-config` in the command line to open the configuration screen.
    2. Go to **“2: Network Options”** and then **“N2 Wireless LAN”** and enter the SSID and passphrase for your network.
    3. Go to "Finish" and wait a few moments for the Raspberry Pi to connect.
@@ -653,7 +653,7 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
    5. Look for the section called *wlan0*. You should see your IP address there (e.g 144.32.70.210).
    6. Take note of your IP, it can be used to connect to the board through SSH or to transfer files with FTP. You can now close the serial PuTTY or direct connection.
 
-5. Connect through SSH using PuTTY (Windows instructions)
+5. **Connect through SSH using PuTTY** (Windows instructions)
    1. Open PuTTY again.
    2. Establish an `SSH` connection using host name *"username@ip_address"* (e.g pi@144.32.70.210) and port 22, using the previously established IP address.
    3. To forward camera image data from the Pi to your computer, you must:
@@ -666,7 +666,7 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
       * **SSID:** *pi*
       * **Password:** *raspberry*
 
-6. View, add and modify files using WinSCP (Windows instructions). Further instructions in [Lab 1](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions/blob/main/Lab1/autumn_lab_1.pdf)
+6. **View, add and modify files using WinSCP** (Windows instructions). Further instructions in [Lab 1](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions/blob/main/Lab1/autumn_lab_1.pdf)
    1. Open WinSCP
    2. Create a "New Site" with the following details:
       * **File Protocol**: *SFTP*
@@ -676,9 +676,9 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
       * **Password**: Your password for the Raspberry Pi. In lab devices: ***raspberry***.
    3. Click "Login". After a connection is established you should be able to see the files in the Pi.
 
-7. Upload all project files to the Raspberry Pi using WinSCP.
+7. **Upload all project files** to the Raspberry Pi using WinSCP.
 
-8. Install Python dependencies with the CLI in SSH PuTTY:
+8. **Install Python dependencies** with the CLI in SSH PuTTY:
 
    All of the Python libraries can be installed using pip:
 
