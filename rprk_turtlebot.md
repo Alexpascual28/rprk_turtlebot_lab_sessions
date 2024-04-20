@@ -1229,7 +1229,7 @@ Building upon the initial setup, this task involves programming the Raspberry Pi
 
 *Task 3: Motion Estimation Based on Odometry*
 
-This advanced task requires students to estimate the robot's speed and distance covered using the encoder data. This involves sophisticated programming to handle asynchronous data collection and real-time computation.
+This task requires students to estimate the robot's speed and distance covered using the encoder data. This involves programming to handle asynchronous data collection and real-time computation.
 
 * **Code Explanation**: `task3.py`:
 
