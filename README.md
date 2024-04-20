@@ -1603,9 +1603,90 @@ This script is designed to test different speed settings and directions, potenti
 
 ---
 
-## The "Turtlebot" and "General Control" Classes
+## "Turtlebot" and "General Control" Classes
+
+The `Turtlebot` class and the `generalControl.ino` sketch form a system for controlling the RPRK robotics platform, using the **Raspberry Pi** and **Arduino Nano**, respectively. High-level decision-making and processing are handled by the Raspberry Pi, while real-time hardware interactions are managed by the Arduino, combining the strengths of both platforms for effective robot control.
+
+The `generalControl.ino` reads all sensor data and forwards it through specified serial registers, while at the same time reading the data recieved through separate control registers and operating the actuators based on it. It thus, acts as a general control interface for the Arduino. The `Turtlebot` class uses serial communication to create a high-level abstraction of the RPRK robot's operation. It can be imported into any Python project in order to send commands to the *ARB* by the use of simple functions. These functions send the appropiate signal through the right serial channel in order for `generalControl.ino` to receive this signal and operate the robot's actuators and sensors in accordance with the command. Here's a detailed look at how these two components work together to manage robot operations:
+
+**Turtlebot.py (Raspberry Pi)**
+
+`Turtlebot.py` is a Python class designed to provide high-level abstraction and to interface through serial with the RPRK robot's hardware components, mostly controlled via an Arduino Nano running `generalControl.ino`. This class encapsulates methods for motor control, sensor data acquisition, and camera operations, allowing for command and control over the robot. It defines a comprehensive class structure to manage various components of the RPRK robotic platform, and relies on several classes nested within it to handle specific subsystems of the robot.
+
+This class acts as a serial  for  Here's a detailed breakdown of the structure and functionalities within `TurtleBot.py`:
 
 
+Motors: Controls the robot's motion including forward/backward movement and turning. It sends commands to the Arduino to adjust motor speeds and directions using PWM signals.
+Camera: Manages video capture for vision tasks using the PiCamera library, processes images for navigation cues, and possibly object or obstacle recognition using OpenCV.
+InfraredSensor: Manages the infrared distance sensor data collection.
+Ultrasonic: Handles ultrasonic distance measurements, essential for obstacle avoidance strategies.
+Joystick: If a joystick is used for manual control, this class interprets the joystick inputs.
+Each of these subsystems interacts with the Arduino via a serial communication link, sending commands to control the hardware and receiving sensor data back from the Arduino.
+
+**generalControl.ino (Arduino)**
+
+The generalControl.ino sketch runs on the Arduino and acts as the low-level controller managing direct hardware interactions. This sketch is responsible for:
+
+Motor Control: It receives speed and direction commands from the Raspberry Pi and adjusts the motors accordingly using PWM outputs and direction pins.
+Sensor Management: It reads from various sensors like ultrasonics and IR sensors and sends this data back to the Raspberry Pi.
+Peripheral Handling: Manages other peripherals as necessary, depending on the robot's hardware configuration.
+This sketch uses registers to manage data communication with the Raspberry Pi, which includes sending sensor readings back to the Pi and receiving motor control commands and other directives from the Pi.
+
+**Interaction Between Turtlebot.py and generalControl.ino**
+
+The interaction between Turtlebot.py and generalControl.ino is primarily through serial communication, facilitated by the Raspberry Pi’s UART interface and the Arduino’s serial ports. Here's how the process typically works:
+
+Command and Control:
+The Raspberry Pi sends commands to the Arduino, like motor speeds or turning commands, which are received by the Arduino and executed.
+The commands might include direct motor control, querying sensor data, or other hardware-specific operations.
+Data Feedback:
+The Arduino continuously reads sensor data and other inputs.
+This data is formatted (often into registers or specific data formats) and sent back to the Raspberry Pi over the same serial connection.
+Synchronization:
+Continuous synchronization is maintained between the Raspberry Pi and Arduino to ensure data integrity and command accuracy. This might involve handshaking signals or specific timing checks to ensure that commands are received and processed correctly.
+
+**Example Communication**
+For example, if the Raspberry Pi wants the robot to move forward:
+
+The Pi’s TurtleBot class sends a speed and direction command through the serial line.
+The Arduino’s generalControl.ino receives this command, interprets it, and adjusts the motor controllers accordingly.
+Simultaneously, the Arduino might send back the status of encoders or other sensors, which the TurtleBot class uses to adjust its commands or process navigation algorithms.
+This system architecture allows for sophisticated control schemes where high-level decision-making and processing are handled by the Raspberry Pi, while real-time hardware interactions are managed by the Arduino, combining the strengths of both platforms for effective robot control.
+
+### The "General Control" Arduino Interface
+
+The generalControl.ino file is structured to control various aspects of a robotics platform, specifically designed for the RPRK (Raspberry Pi Robotics Kit). It integrates multiple components such as infrared sensors, a joystick, motors, and ultrasonic sensors into a cohesive system, allowing for modular interaction and control of a robot. Here's a detailed breakdown of the code:
+
+Includes and Global Object Declarations
+The script begins by including header files for various modules:
+
+Infrared.h: Manages infrared sensor interactions.
+Joystick.h: Handles inputs from a joystick.
+Motors.h: Controls the motor outputs.
+Ultrasonics.h: Manages ultrasonic sensors for distance measurement.
+It also includes ARB.h for the Arduino Robotics Board specific functions and Wire.h for I2C communication, essential for interfacing with certain sensors.
+
+Objects for each of the components are instantiated globally:
+
+Infrared infrared(IR_BUS_NUMBER): An infrared object is created, initialized with a bus number for I2C.
+Joystick joystick: A joystick object for managing joystick input.
+Motors motors: A motor controller object.
+Ultrasonics ultrasonics: An object to handle ultrasonic sensors.
+Setup Function
+The setup() function initializes the system:
+
+ARBSetup(true): Initializes the Arduino Robotics Board with serial communications enabled. This is likely a custom function from the ARB.h library, setting up necessary configurations and enabling serial communication for debugging and telemetry.
+Serial.begin(9600): Starts serial communication at 9600 baud rate, typical for Arduino projects for debugging output to the serial monitor.
+Initializations for each component (joystick.initialize(), motors.initialize(), etc.) set up each module to be ready for operation, likely configuring pins and setting initial states.
+Loop Function
+The loop() function is where the continuous operation of the robot occurs:
+
+infrared.readIR(): Reads data from the infrared sensor. This could involve detecting obstacles or receiving signals from an IR remote.
+ultrasonics.readUltrasonics(): Measures distances using ultrasonic sensors, important for obstacle avoidance or navigation.
+joystick.readInput(): Checks for input from the joystick, which could direct the robot’s movement or other actions.
+motors.runMotors(): Actuates motors based on inputs from other sensors or the joystick.
+serialUpdate(): This function is called to handle any serial communication tasks, which could include sending sensor readings or statuses back to a host computer.
+delay(0.1): Introduces a very short delay (0.1 milliseconds) to stabilize the loop execution. This is critical in real-time systems to prevent the microcontroller from executing the loop too fast, which can lead to missed sensor readings or erratic motor behavior.
 
 ---
 
