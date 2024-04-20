@@ -821,7 +821,7 @@ void loop() {
 
 A demo usage of the ARB library for serial communication can also be found in `examples/serialComms.ino`.
 
-## Overview of Example Files in the ARB Examples Directory
+**Overview of Example Files in the ARB Examples Directory**
 
 Each example in the ARB library's **"examples"** directory demonstrates specific functionalities of the Arduino Robotics Board. Here is a brief overview of what each example illustrates:
 
