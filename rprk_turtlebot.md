@@ -1371,7 +1371,7 @@ Lab 6 focuses on integrating computer vision capabilities into a robotics platfo
 
    This script processes the video to detect and display ArUco markers, providing a practical application of marker-based navigation or interaction in robotics.
 
-### Lab Session 7 PDF Summary: Robot Control with ROS
+### Lab Session 7: Robot Control with ROS
 
 **Overview**:
 Lab 7 introduces students to the Robot Operating System (ROS), a powerful and widely-used open-source robotics middleware. This lab focuses on teaching students how to develop ROS-based applications using Python, specifically covering the creation and management of networked publishers and subscribers.
@@ -1525,7 +1525,7 @@ Lab Session 9 is the culmination of the robotics module, focusing on integrating
    * To demonstrate the ability to implement complex behaviors on embedded hardware.
    * To explore the challenges and design considerations for real-world robotic navigation.
 
-**Pre-Lab Preparation**:
+*Pre-Lab Preparation*:
    * Students should ensure their robots are fully operational, with all sensors, actuators, and programming from previous labs functioning reliably.
    * Review navigation planning and control methods, focusing on how to utilize the robot's capabilities effectively.
 
