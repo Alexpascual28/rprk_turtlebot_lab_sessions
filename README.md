@@ -656,7 +656,7 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
 
 4. **Connect the Pi to a local WiFi** network and **check the device's IP address** on the network.
    1. Type `sudo raspi-config` in the command line to open the configuration screen.
-   2. Go to **“2: Network Options”** and then **“N2 Wireless LAN”** and enter the SSID and passphrase for your network. For the lab network, use the following details:
+   2. Go to **“2: Network Options”** and then **“N2 Wireless LAN”** and enter the SSID and passphrase for your network. You must connect the Pi to the same network as your computer. For the lab network, use the following details:
       * **SSID:** *robotlab*
       * **Password:** *vetzlentath*
    3. Go to "Finish" and wait a few moments for the Raspberry Pi to connect.
@@ -665,7 +665,7 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
    6. Take note of your IP, it can be used to connect to the board through SSH or to transfer files with FTP. You can now close the serial PuTTY or direct connection.
 
 5. **Connect through SSH using PuTTY** (Windows instructions)
-   1. Open PuTTY again.
+   1. Open PuTTY again. You must be connected to the same network as the Raspberry Pi.
    2. Establish an `SSH` connection using host name *"username@ip_address"* (e.g pi@144.32.70.210) and port 22, using the previously established IP address.
    3. To forward camera image data from the Pi to your computer, you must:
       * Have [XMing](http://www.straightrunning.com/XmingNotes/) installed in your device. Further instructions in [Lab 6](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions/blob/main/Lab6/autumn_lab_6.pdf)
@@ -678,7 +678,7 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
       * **Password:** *raspberry*
 
 6. **View, add and modify files using WinSCP** (Windows instructions). Further instructions in [Lab 1](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions/blob/main/Lab1/autumn_lab_1.pdf)
-   1. Open WinSCP
+   1. Open WinSCP. You must be connected to the same network as the Raspberry Pi.
    2. Create a "New Site" with the following details:
       * **File Protocol**: *SFTP*
       * **Host Name**: The device's IP address for the network in format *XXX.XX.XX.XXX* (e.g *144.32.70.210*). Refer to step 4 in [Installation](#installation).
