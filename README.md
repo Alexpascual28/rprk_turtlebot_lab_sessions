@@ -1625,7 +1625,24 @@ turtlebot = TurtleBot(estop=True)
 
 This command initializes the TurtleBot with ***emergency stop*** (`estop`) functionality enabled, which can be used to halt the robot if it encounters a critical situation.
 
-* **TurtleBot Initialization**: The `__init__` method sets up necessary hardware interfaces and initializes various sensors and systems like motors, camera, infrared, ultrasound, and joystick. The robot's initial pose is also set here.
+* **TurtleBot Initialization**: The `__init__` method sets up necessary hardware interfaces and initializes various sensors and systems like motors, camera, infrared, ultrasound, and joystick. The robot's initial pose is also set here:
+
+   ```python
+   def __init__(self, estop=True):
+        # Setup the ARB functions
+        print("Setting up ARB")
+        ARBPiSetup(SERIAL)
+        
+        self.initial_pose = [0, 0, 0] #  x, y, w(orientation)
+        self.estop = estop
+        
+        # Initialisation of sub-classes
+        self.motors = self.Motors(self, self.initial_pose)
+        self.camera = self.Camera()
+        self.infrared = self.InfraredSensor()
+        self.ultrasound = self.Ultrasonic()
+        self.joystick = self.Joystick()
+   ```
 
 * **ARB Setup**: `ARBPiSetup(SERIAL)` starts the **ARBPi** class (explained before), initializing communication protocols, and setting up serial communication parameters with the Arduino.
 
@@ -1726,6 +1743,12 @@ turtlebot = TurtleBot(estop=True)
 
 # Move forward by 100 centimeters
 turtlebot.motors.move_step(100)
+
+# Get infrared sensor reading
+turtlebot.infrared.get_infrared_distance()
+
+# Get left ultrasonic sensor reading
+turtlebot.ultrasound.get_ultrasound_distance("left")
 
 # Rotate by 90 degrees (π/2 radians)
 turtlebot.motors.rotate_step(math.pi / 2)
