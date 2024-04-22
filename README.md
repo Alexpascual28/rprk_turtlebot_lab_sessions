@@ -1609,19 +1609,132 @@ The `Turtlebot` class and the `generalControl.ino` sketch form a system for cont
 
 The `generalControl.ino` reads all sensor data and forwards it through specified serial registers, while at the same time reading the data recieved through separate control registers and operating the actuators based on it. It thus, acts as a general control interface for the Arduino. The `Turtlebot` class uses serial communication to create a high-level abstraction of the RPRK robot's operation. It can be imported into any Python project in order to send commands to the *ARB* by the use of simple functions. These functions send the appropiate signal through the right serial channel in order for `generalControl.ino` to receive this signal and operate the robot's actuators and sensors in accordance with the command. Here's a detailed look at how these two components work together to manage robot operations:
 
-**Turtlebot.py (Raspberry Pi)**
+### Turtlebot.py (Raspberry Pi)
 
-`Turtlebot.py` is a Python class designed to provide high-level abstraction and to interface through serial with the RPRK robot's hardware components, mostly controlled via an Arduino Nano running `generalControl.ino`. This class encapsulates methods for motor control, sensor data acquisition, and camera operations, allowing for command and control over the robot. It defines a comprehensive class structure to manage various components of the RPRK robotic platform, and relies on several classes nested within it to handle specific subsystems of the robot.
+`Turtlebot.py` is a Python class designed to provide high-level abstraction and to interface through serial with the RPRK robot's hardware components, mostly controlled via an Arduino Nano running `generalControl.ino`. This class encapsulates methods for motor control, sensor data acquisition, and camera operations, allowing for command and control over the robot. It defines a comprehensive and modular class structure to manage various components of the RPRK robotic platform, and relies on several classes nested within it to handle specific subsystems of the robot.
 
-This class acts as a serial  for  Here's a detailed breakdown of the structure and functionalities within `TurtleBot.py`:
+Here's a detailed breakdown of the structure and functionalities within `TurtleBot.py`. Each of these subsystems interacts with the Arduino via a serial communication link, sending commands to control the hardware and receiving sensor data back from the Arduino:
 
+**Initialization and Configuration**
 
-Motors: Controls the robot's motion including forward/backward movement and turning. It sends commands to the Arduino to adjust motor speeds and directions using PWM signals.
-Camera: Manages video capture for vision tasks using the PiCamera library, processes images for navigation cues, and possibly object or obstacle recognition using OpenCV.
-InfraredSensor: Manages the infrared distance sensor data collection.
-Ultrasonic: Handles ultrasonic distance measurements, essential for obstacle avoidance strategies.
-Joystick: If a joystick is used for manual control, this class interprets the joystick inputs.
-Each of these subsystems interacts with the Arduino via a serial communication link, sending commands to control the hardware and receiving sensor data back from the Arduino.
+To initialize the `TurtleBot`, you start by creating an instance of the class. During initialization, various components like motors, camera, infrared sensor, ultrasound sensor, and joystick are also initialized. Here is an example:
+
+```python
+turtlebot = TurtleBot(estop=True)
+```
+
+This command initializes the TurtleBot with ***emergency stop*** (`estop`) functionality enabled, which can be used to halt the robot if it encounters a critical situation.
+
+* **TurtleBot Initialization**: The `__init__` method sets up necessary hardware interfaces and initializes various sensors and systems like motors, camera, infrared, ultrasound, and joystick. The robot's initial pose is also set here.
+
+* **ARB Setup**: `ARBPiSetup(SERIAL)` starts the **ARBPi** class (explained before), initializing communication protocols, and setting up serial communication parameters with the Arduino.
+
+*Helper Methods*
+
+Includes methods for reading data from registers in various formats (16-bit integers, fractional numbers), which are crucial for interpreting sensor data and controlling actuators based on feedback from the Arduino.
+
+* `__init__`: Runs when the Turtlebot class is instantiated. Initializes the `TurtleBot` by setting up the ARB functions, initializing its pose, and creating instances of its components like motors, camera, infrared sensor, ultrasonic sensor, and joystick.
+* `read_16bit_number`: Converts two separate 8-bit register values into a single 16-bit signed integer. To receive data larger than 8-bits and compute it into a large number.
+* `read_fractional_number`: Combines a whole number and a fractional part to form a decimal number, typically used for precise measurements like distance or speed. To receive data larger than 8-bits and compute it into a number with decimals.
+
+**Motors Subclass**
+
+Controls the robot's motion including forward/backward movement and turning. It sends commands to the Arduino to adjust motor speeds and directions using PWM signals.
+
+* **Motor Control**: The `Motors` class within `TurtleBot` handles all motor operations including speed and direction adjustments. It utilizes several registers (constants that are likely defined elsewhere) to communicate desired motor states to the Arduino.
+
+* **Movement Functions**: Includes methods to change robot direction, set speed levels, adjust wheel speeds, and manage encoder resets. Also, functions for moving the robot in steps or continuously based on specified distances or rotations, utilizing encoder feedback to adjust the movement dynamically.
+
+*Methods*
+
+- `__init__`: Sets initial conditions and parameters for motor operation, including speed and direction settings.
+- `change_direction`: Sends a command to change the robot's direction based on a specified direction input. Valid directions can be "forward", "backward", "left", "right", and "stop".
+- `set_robot_speed_by_level`: Adjusts the robot's speed according to a predefined level from 0 to 9.
+- `set_wheel_speed`: Directly sets the speed of a specific wheel ('A' or 'B') using a PWM signal calculated from the desired speed in centimeters per second.
+- `set_wheel_direction`: Sets the rotational direction of a specified wheel.
+- `set_robot_speed`: Sets the speed for both wheels, either to the same speed or different speeds for each.
+- `get_current_steps`: Retrieves the current step count from the motor encoders.
+- `get_current_distance`: Calculates the distance traveled using the data from motor encoders.
+- `get_current_speed`: Calculates the speed from the encoder data.
+- `reset_encoder`: Resets the encoder count to zero.
+- `calculate_current_pose`: Updates the robot's current position based on the distances traveled by each wheel.
+- `calculate_distance_cm`: Converts encoder steps to a distance in centimeters.
+- `calculate_speed_cm_s`: Calculates the speed in cm/s from distance and time data.
+- `move_step` and `rotate_step`: Perform controlled movements or rotations in steps. Moves the robot a specified distance in centimeters, taking into account the current pose and updating it based on the encoder feedback. Rotates the robot by a specified angle in radians, updating the pose based on encoder feedback.
+- `move_continuous` and `rotate_continuous`: Handle continuous movement or rotation over a specified distance or angle.
+
+**Camera Subclass**
+
+Manages video capture for vision tasks using the PiCamera library, processes images for navigation cues, and object or obstacle recognition using OpenCV.
+
+* **Camera Initialization**: Sets up the Raspberry Pi camera module, configures it for continuous capture, and initializes parameters for object detection using OpenCV, including ArUco tags and color detection.
+
+* **Image Processing**: Methods to capture frames continuously, detect specific markers, and adjust image processing parameters dynamically. It also includes utility methods for image display and shape detection.
+
+*Methods*
+
+- `__init__`: Initializes the camera settings and starts a thread for continuous frame capture.
+- `start_image_acquisition`, `capture_frame_continuous`, `capture_frame`: Manage the acquisition of video frames. Captures video frames continuously from the camera and optionally displays them.
+- `detect_aruco`, `detect_blobs`, `detect_colour`, `detect_shapes`: Various functions for detecting markers, color blobs, specific colors, and shapes within the camera's view. Detects ArUco markers in the given image, useful for navigation and positioning. Detects blobs of a specified color within an image, which can be used for object interaction tasks.
+- `show_image`: Displays an image frame with additional details like frame rate.
+- `create_hsv_csv_file`, `read_hsv_values`, `write_hsv_values`, `change_hsv_values`: Manage the reading, writing, and updating of HSV color values stored in a **CSV** file for color detection purposes.
+- `generate_aruco_tags`: Generates and saves a PDF file with ArUco tags.
+
+**Ultrasonic Subclass**
+
+Handles ultrasonic distance measurements, essential for obstacle avoidance strategies.
+
+* **Ultrasound Initialization**: Initializes registers for controlling and receiving data from ultrasonic sensors.
+
+* **Distance Measurement**: Method to fetch distance measurements from specified ultrasound sensors, facilitating obstacle detection and avoidance.
+
+*Methods*
+
+- `__init__`: Initializes registers for ultrasonic sensors.
+- `get_ultrasound_distance`: Retrieves the distance measurement from an ultrasonic sensor based on the specified sensor ('left' or 'right'), which is crucial for obstacle detection and navigation.
+
+**Joystick Subclass**
+
+If a joystick is used for manual control, this class interprets the joystick inputs.
+
+* **Joystick Control**: Handles joystick input by fetching current joystick direction from a register and translating it into actionable commands.
+
+*Methods*
+
+- `__init__`: Initializes registers for joystick communication.
+- `get_joystick_direction`: Returns the current direction indicated by the joystick. Fetches and translates the current direction indicated by the joystick from sensor data, converting register values into readable text direction strings.
+
+**InfraredSensor Subclass**
+
+Manages the infrared distance sensor data collection.
+
+* **Infrared Measurement**: Provides a method to get distance measurements from an infrared sensor, useful for close-range obstacle detection.
+
+*Methods*
+
+- `__init__`: Sets up the register for communicating with the infrared sensor.
+- `get_infrared_distance`: Retrieves the current distance reading from the infrared sensor, which is often used for precise short-range obstacle detection, useful for obstacle detection and avoidance.
+
+**Example of Using `TurtleBot`**
+
+Here’s a simple example demonstrating how to use the `TurtleBot` to move forward, rotate, and then stop:
+
+```python
+# Python
+# Initialize the TurtleBot
+turtlebot = TurtleBot(estop=True)
+
+# Move forward by 100 centimeters
+turtlebot.motors.move_step(100)
+
+# Rotate by 90 degrees (π/2 radians)
+turtlebot.motors.rotate_step(math.pi / 2)
+
+# Stop the robot
+turtlebot.motors.change_direction("stop")
+```
+
+This example illustrates basic movement commands that utilize the motor's subclass functions. The move_step and rotate_step functions use encoder feedback to adjust the robot’s movement accurately.
 
 **generalControl.ino (Arduino)**
 
