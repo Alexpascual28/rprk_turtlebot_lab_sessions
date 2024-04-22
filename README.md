@@ -651,12 +651,14 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
    Alternatively, you can connect a screen and keyboard directly to the Raspberry Pi to access the terminal directly.
 
    4. Login using your login details for the Raspberry Pi in CLI. For the lab RPRK devices, the details are the following:
-      * **SSID:** *pi*
+      * **Username:** *pi*
       * **Password:** *raspberry*
 
 4. **Connect the Pi to a local WiFi** network and **check the device's IP address** on the network.
    1. Type `sudo raspi-config` in the command line to open the configuration screen.
-   2. Go to **“2: Network Options”** and then **“N2 Wireless LAN”** and enter the SSID and passphrase for your network.
+   2. Go to **“2: Network Options”** and then **“N2 Wireless LAN”** and enter the SSID and passphrase for your network. For the lab network, use the following details:
+      * **SSID:** *robotlab*
+      * **Password:** *vetzlentath*
    3. Go to "Finish" and wait a few moments for the Raspberry Pi to connect.
    4. Type `ifconfig` on the terminal.
    5. Look for the section called *wlan0*. You should see your IP address there (e.g 144.32.70.210).
@@ -672,7 +674,7 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
    4. If you wish, save the session under your preferred name by going to **Session** > **"Load, save or delete a stored session"**. Write your session name under *Saved Sessions* and click **"Save"**.
    5. Click **"Open"** at the bottom-right of the window.
    6. Login using your login details for the Raspberry Pi in CLI. For the lab RPRK devices, the details are the following:
-      * **SSID:** *pi*
+      * **Username:** *pi*
       * **Password:** *raspberry*
 
 6. **View, add and modify files using WinSCP** (Windows instructions). Further instructions in [Lab 1](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions/blob/main/Lab1/autumn_lab_1.pdf)
@@ -681,7 +683,7 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
       * **File Protocol**: *SFTP*
       * **Host Name**: The device's IP address for the network in format *XXX.XX.XX.XXX* (e.g *144.32.70.210*). Refer to step 4 in [Installation](#installation).
       * **Port**: *22*
-      * **User Name**: Your SSID for the Raspberry Pi. In lab devices: ***pi***.
+      * **User Name**: Your username for the Raspberry Pi. In lab devices: ***pi***.
       * **Password**: Your password for the Raspberry Pi. In lab devices: ***raspberry***.
    3. Click "Login". After a connection is established you should be able to see the files in the Pi.
 
