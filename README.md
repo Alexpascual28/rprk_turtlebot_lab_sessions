@@ -643,12 +643,12 @@ The Raspberry Pi Robotics Kit (RPRK) is designed to help students build and prog
       - To check if the library has been successfully installed, go back to **Sketch** > **Include Library**. You should see the library named "ARB" at the bottom of the drop-down menu.
       - Click on it to include the library in your current sketch, which should automatically insert an include statement like `#include <ARB.h>` at the top of your sketch.
 
-3. **Open a connection to the Raspberry Pi** using PuTTY or directly through HDMI. (Windows instructions). Further instructions in [Lab 1](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions/blob/main/Lab1/autumn_lab_1.pdf):
+3. **Open a connection to the Raspberry Pi** using PuTTY or directly through HDMI (Windows instructions). Further instructions in [Lab 1](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions/blob/main/Lab1/autumn_lab_1.pdf):
    1. Connect to the Raspberry Pi with your laptop using the serial **USB to UART HAT** and a USB cable.
    2. Check what *COM* port the device is connected to using "Device Manager"
    3. Establish a `Serial` connection with PuTTY using the device *COM* port and baud rate 115200.
    
-   Alternatively, you can connect a screen and keyboard directly to the Raspberry Pi to access the terminal directly.
+   Alternatively, you can connect a screen and keyboard using the micro HDMI and USB-A ports in the Raspberry Pi directly to the Raspberry Pi to access the terminal directly.
 
    4. Login using your login details for the Raspberry Pi in CLI. For the lab RPRK devices, the details are the following:
       * **Username:** *pi*
