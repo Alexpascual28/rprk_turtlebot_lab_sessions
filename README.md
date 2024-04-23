@@ -1850,46 +1850,78 @@ Ultrasonic sensor data is being interfaced through the use of registers to send 
 
 The Motors.cpp file is a comprehensive implementation for controlling and managing motors on the RPRK robotics platform, specifically for an Arduino-based setup.  It includes functionalities for direct motor control, feedback handling via encoders, and communication with external controllers through registers. Here’s a detailed explanation of the key components of the code:
 
-*Includes and Constructor*
+*Public Methods*
 
-* **Includes**: The file includes `Motors.h` for the class definition, `ARB.h` for the Arduino Robotics Board, `Wire.h` for I2C communications, and `PID_v1.h` for PID control, although the PID lines are commented out in this version.
-* **Constructor**: The `Motors` constructor is empty, since initialization is handled entirely through the `initialize()` method.
+   *Includes and Constructor*
 
-*Initializations*
+   * **Includes**: The file includes `Motors.h` for the class definition, `ARB.h` for the Arduino Robotics Board, `Wire.h` for I2C communications, and `PID_v1.h` for PID control, although the PID lines are commented out in this version.
+   * **Constructor (`Motors::Motors()`)**: The `Motors` constructor is empty, since initialization is handled entirely through the `initialize()` method.
 
-* **Static Member Variables**: These include direction defaults and volatile variables for tracking motor steps. The volatile keyword is used because these variables are likely modified within interrupt service routines (ISRs).
-* **Initialize Method**: This sets up pin modes, initializes components, attaches interrupts for encoders, and prepares serial registers for communication.
+   *Initializations*
 
-*Motor Operation*
+   * **Static Member Variables**: These include direction defaults and volatile variables for tracking motor steps. The `volatile` keyword is used because these variables are modified within interrupt service routines (**ISRs**).
+   * **Initialize Method (`initialize()`)**: This sets up pin modes, initializes components, attaches interrupts for encoders, and prepares serial registers for communication.
 
-- `runMotors()`: This function consolidates the operations needed to control the motors each loop. It reads direction inputs, PWM signals, and speed settings, and handles the encoder counts.
+   ```cpp
+   // C++
+   void Motors::initialize(){
+      m_setPinModes();
+      m_initializeComponents(); // Initializes values
+      m_attachInterrupts(); // Attaches interrupts
+      m_initializeSerialRegisters(); // Initialize serial registers
+   }
+   ```
+
+   *Motor Operation*
+
+   * **Run Motors (`runMotors()`)**: Main function. This function consolidates the operations needed to control the motors each loop. It reads direction inputs, PWM signals, and speed settings, and handles the encoder counts.
+
+   ```cpp
+   // C++
+   void Motors::runMotors(){
+      // Wheels
+      m_readWheelDirections();
+      m_readPWMSignals();
+
+      // General movement
+      m_readSpeedValue();
+      m_readDirectionInput();
+
+      // Encoders
+      m_setAbsoluteEncoderSteps();
+      m_calculateCurrentStepsA();
+      m_calculateCurrentStepsB();
+   }
+   ```
 
 *Private Methods*
 
-* **Pin Setup**: Configures the motor and encoder pins for input and output.
-* **Component Initialization**: Sets initial motor states (e.g., stopped, forward) and resets encoder counts.
-* **Interrupt Handling**: Attaches interrupts to the encoder pins to handle step counting dynamically as the motors run.
-* **Serial Registers Initialization**: Sets up registers for interfacing with another microcontroller or a computer, to report motor states and receive commands.
+   *Run During Initialisation (`initialize()`)*
 
-*Motor Control Functions*
+   * **Pin Setup (`m_setPinModes()`)**: Configures the motor and encoder pins for input and output.
+   * **Component Initialization (`m_initializeComponents()`)**: Sets initial motor states (e.g., stopped, forward) and resets encoder counts.
+   * **Interrupt Handling (`m_attachInterrupts()`)**: Attaches interrupts to the encoder pins to handle step counting dynamically as the motors run.
+   * **Serial Registers Initialization (`m_initializeSerialRegisters()`)**: Sets up registers for interfacing with another microcontroller or a computer, to report motor states and receive commands.
 
-* **Direction and PWM Handling**: These functions read values from registers (likely set by another part of the program or another device) to adjust motor directions and speed dynamically.
-* **Speed and Direction Commands**: Additional functions translate high-level commands (e.g., move forward, turn left) into motor directions and speeds.
+   *Motor Control Functions*
 
-*Encoder and Distance Handling*
+   * **Direction and PWM Handling (`m_readWheelDirections()`,`m_readPWMSignals()`,`m_readSpeedValue()`, `m_readDirectionInput()`)**: These functions read values from registers (set by another part of the program or another device) to adjust motor directions and speed dynamically.
+   * **Speed and Direction Commands (`m_moveForward()`,`m_moveBackward(`,`m_moveLeft()`,`m_moveRight()`, `m_stopRobot()`)**: Additional functions translate high-level commands (e.g., move forward, turn left) into motor directions and speeds.
 
-* **Encoder Step Counting**: ISRs for the encoders adjust step counts based on the direction of rotation. This step data is then used to calculate distances traveled and speeds, which are essential for tasks like navigation and positioning.
-* **Distance Calculation**: Converts encoder steps into physical distance using the wheel's circumference and gear ratios, a critical component for precise movement.
+   *Encoder and Distance Handling*
 
-*Utility Functions*
+   * **Encoder Step Counting (`m_setAbsoluteEncoderSteps()`, `m_calculateCurrentStepsA()`, `m_calculateCurrentStepsB()`, `m_resetEncoders()`)**: Functions for the encoders to calculate robot movement based on step counts and the direction of rotation. This step data is then used to calculate distances traveled and speeds, which are essential for tasks like navigation and positioning.
+   * **Distance Calculation (`m_stepsToCentimetres(int t_steps)`)**: Converts encoder steps into physical distance using the wheel's circumference and gear ratios, a critical component for precise movement.
 
-* **Adjust Speed**: Calculates PWM values based on a desired speed level and updates the motors.
-* **Set Motor Direction**: Updates the direction of motor rotation.
-* **Sending Data to Registers**: These functions are designed to interface with another system component via registers, which could be part of a larger robot control system involving a Raspberry Pi or similar device.
+   *Utility Functions*
 
-*Interrupt Service Routines (ISRs)*
+   * **Adjust Speed (`m_adjustSpeed(int t_speedLevel)`)**: Calculates PWM values based on a desired speed level and updates the motors.
+   * **Set Motor Direction (`m_motorSetDir(m_Motor t_motor, m_Direction t_dir)`)**: Updates the direction of motor rotation.
+   * **Sending Data to Registers (`m_sendEncoderStepsToRegisters(...)`, `m_sendDecimalToRegisters(...)`)**: These functions are designed to interface with another system component via registers, which is part of a larger robot control system involving a Raspberry Pi or similar device.
 
-* **Encoder ISRs**: Detect changes in encoder outputs (indicative of wheel rotation) and update step counts. This feedback is crucial for closed-loop control systems to ensure the robot moves accurately according to the commands.
+   *Interrupt Service Routines (ISRs)*
+
+   * **Encoder ISRs (`m_ENCA_ISR()`, `m_ENCB_ISR()`)**: Detect changes in encoder outputs (indicative of wheel rotation) and update step counts. This feedback is crucial for closed-loop control systems to ensure the robot moves accurately according to the commands.
 
 ### Interaction Between `Turtlebot.py` and `generalControl.ino`
 
