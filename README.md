@@ -179,7 +179,7 @@
 
 | File                                                                                                                             | Summary                         |
 | ---                                                                                                                              | ---                             |
-| [TurtleBot.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Library (Last Version)/TurtleBot.py) | <code>► INSERT-TEXT-HERE</code> |
+| [TurtleBot.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Library (Last Version)/TurtleBot.py) | <code> </code> |
 
 </details>
 
@@ -187,13 +187,13 @@
 
 | File                                                                                                           | Summary                         |
 | ---                                                                                                            | ---                             |
-| [ARBPi.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/ARBPi.h)           | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/ARBPi.cpp)       | <code>► INSERT-TEXT-HERE</code> |
-| [task2p1.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/task2p1.py)     | <code>► INSERT-TEXT-HERE</code> |
-| [task3.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/task3.py)         | <code>► INSERT-TEXT-HERE</code> |
-| [TurtleBot.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/TurtleBot.py) | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/ARBPi.py)         | <code>► INSERT-TEXT-HERE</code> |
-| [task2.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/task2.py)         | <code>► INSERT-TEXT-HERE</code> |
+| [ARBPi.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/ARBPi.h)           | <code> </code> |
+| [ARBPi.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/ARBPi.cpp)       | <code> </code> |
+| [task2p1.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/task2p1.py)     | <code> </code> |
+| [task3.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/task3.py)         | <code> </code> |
+| [TurtleBot.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/TurtleBot.py) | <code> </code> |
+| [ARBPi.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/ARBPi.py)         | <code> </code> |
+| [task2.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/task2.py)         | <code> </code> |
 
 </details>
 
@@ -201,7 +201,7 @@
 
 | File                                                                                                                                | Summary                         |
 | ---                                                                                                                                 | ---                             |
-| [encoderSpeed.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/encoderSpeed/encoderSpeed.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [encoderSpeed.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/encoderSpeed/encoderSpeed.ino) | <code> </code> |
 
 </details>
 
@@ -209,7 +209,7 @@
 
 | File                                                                                                                                            | Summary                         |
 | ---                                                                                                                                             | ---                             |
-| [encoderMotorWASD.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/encoderMotorWASD/encoderMotorWASD.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [encoderMotorWASD.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/encoderMotorWASD/encoderMotorWASD.ino) | <code> </code> |
 
 </details>
 
@@ -217,7 +217,7 @@
 
 | File                                                                                                                                         | Summary                         |
 | ---                                                                                                                                          | ---                             |
-| [odometryControl.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/odometryControl/odometryControl.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [odometryControl.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/odometryControl/odometryControl.ino) | <code> </code> |
 
 </details>
 
@@ -225,7 +225,7 @@
 
 | File                                                                                                                                   | Summary                         |
 | ---                                                                                                                                    | ---                             |
-| [encoderSerial.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/encoderSerial/encoderSerial.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [encoderSerial.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/encoderSerial/encoderSerial.ino) | <code> </code> |
 
 </details>
 
@@ -233,7 +233,7 @@
 
 | File                                                                                                                                      | Summary                         |
 | ---                                                                                                                                       | ---                             |
-| [encoderReading.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/encoderReading/encoderReading.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [encoderReading.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab5/encoderReading/encoderReading.ino) | <code> </code> |
 
 </details>
 
@@ -241,9 +241,9 @@
 
 | File                                                                                                          | Summary                         |
 | ---                                                                                                           | ---                             |
-| [keywords.txt](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARB/keywords.txt) | <code>► INSERT-TEXT-HERE</code> |
-| [ARB.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARB/ARB.h)               | <code>► INSERT-TEXT-HERE</code> |
-| [ARB.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARB/ARB.cpp)           | <code>► INSERT-TEXT-HERE</code> |
+| [keywords.txt](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARB/keywords.txt) | <code> </code> |
+| [ARB.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARB/ARB.h)               | <code> </code> |
+| [ARB.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARB/ARB.cpp)           | <code> </code> |
 
 </details>
 
@@ -251,7 +251,7 @@
 
 | File                                                                                                                                        | Summary                         |
 | ---                                                                                                                                         | ---                             |
-| [motorControl.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARB/examples/motorControl/motorControl.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [motorControl.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARB/examples/motorControl/motorControl.ino) | <code> </code> |
 
 </details>
 
@@ -259,7 +259,7 @@
 
 | File                                                                                                                                  | Summary                         |
 | ---                                                                                                                                   | ---                             |
-| [pushButton.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARB/examples/pushButton/pushButton.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [pushButton.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARB/examples/pushButton/pushButton.ino) | <code> </code> |
 
 </details>
 
@@ -267,7 +267,7 @@
 
 | File                                                                                                                                           | Summary                         |
 | ---                                                                                                                                            | ---                             |
-| [BLEPeripheral.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARB/examples/BLEPeripheral/BLEPeripheral.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [BLEPeripheral.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARB/examples/BLEPeripheral/BLEPeripheral.ino) | <code> </code> |
 
 </details>
 
@@ -275,7 +275,7 @@
 
 | File                                                                                                                      | Summary                         |
 | ---                                                                                                                       | ---                             |
-| [I2CMux.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARB/examples/I2CMux/I2CMux.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [I2CMux.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARB/examples/I2CMux/I2CMux.ino) | <code> </code> |
 
 </details>
 
@@ -283,7 +283,7 @@
 
 | File                                                                                                                      | Summary                         |
 | ---                                                                                                                       | ---                             |
-| [uSonic.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARB/examples/uSonic/uSonic.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [uSonic.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARB/examples/uSonic/uSonic.ino) | <code> </code> |
 
 </details>
 
@@ -291,7 +291,7 @@
 
 | File                                                                                                                                     | Summary                         |
 | ---                                                                                                                                      | ---                             |
-| [serialComms.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARB/examples/serialComms/serialComms.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [serialComms.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARB/examples/serialComms/serialComms.ino) | <code> </code> |
 
 </details>
 
@@ -299,7 +299,7 @@
 
 | File                                                                                                                                                 | Summary                         |
 | ---                                                                                                                                                  | ---                             |
-| [motorControlPWM.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task4/motorControlPWM/motorControlPWM.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [motorControlPWM.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task4/motorControlPWM/motorControlPWM.ino) | <code> </code> |
 
 </details>
 
@@ -307,10 +307,10 @@
 
 | File                                                                                                             | Summary                         |
 | ---                                                                                                              | ---                             |
-| [ARBPi.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/ARBPi.h)     | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/ARBPi.cpp) | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/ARBPi.py)   | <code>► INSERT-TEXT-HERE</code> |
-| [task5.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/task5.py)   | <code>► INSERT-TEXT-HERE</code> |
+| [ARBPi.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/ARBPi.h)     | <code> </code> |
+| [ARBPi.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/ARBPi.cpp) | <code> </code> |
+| [ARBPi.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/ARBPi.py)   | <code> </code> |
+| [task5.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/task5.py)   | <code> </code> |
 
 </details>
 
@@ -318,7 +318,7 @@
 
 | File                                                                                                                                                                   | Summary                         |
 | ---                                                                                                                                                                    | ---                             |
-| [motorControl_joystick.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/motorControl_joystick/motorControl_joystick.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [motorControl_joystick.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/motorControl_joystick/motorControl_joystick.ino) | <code> </code> |
 
 </details>
 
@@ -326,11 +326,11 @@
 
 | File                                                                                                                                                    | Summary                         |
 | ---                                                                                                                                                     | ---                             |
-| [ARBPi.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/serialComms_send/ARBPi.h)                           | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/serialComms_send/ARBPi.cpp)                       | <code>► INSERT-TEXT-HERE</code> |
-| [serialComms_send.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/serialComms_send/serialComms_send.py)   | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/serialComms_send/ARBPi.py)                         | <code>► INSERT-TEXT-HERE</code> |
-| [serialComms_send1.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/serialComms_send/serialComms_send1.py) | <code>► INSERT-TEXT-HERE</code> |
+| [ARBPi.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/serialComms_send/ARBPi.h)                           | <code> </code> |
+| [ARBPi.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/serialComms_send/ARBPi.cpp)                       | <code> </code> |
+| [serialComms_send.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/serialComms_send/serialComms_send.py)   | <code> </code> |
+| [ARBPi.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/serialComms_send/ARBPi.py)                         | <code> </code> |
+| [serialComms_send1.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/serialComms_send/serialComms_send1.py) | <code> </code> |
 
 </details>
 
@@ -338,7 +338,7 @@
 
 | File                                                                                                                                                             | Summary                         |
 | ---                                                                                                                                                              | ---                             |
-| [serialComms_receive.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/serialComms_receive/serialComms_receive.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [serialComms_receive.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/serialComms_receive/serialComms_receive.ino) | <code> </code> |
 
 </details>
 
@@ -346,7 +346,7 @@
 
 | File                                                                                                                                                                | Summary                         |
 | ---                                                                                                                                                                 | ---                             |
-| [serialComms_receive1.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/serialComms_receive1/serialComms_receive1.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [serialComms_receive1.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/serialComms_receive1/serialComms_receive1.ino) | <code> </code> |
 
 </details>
 
@@ -354,7 +354,7 @@
 
 | File                                                                                                                                                       | Summary                         |
 | ---                                                                                                                                                        | ---                             |
-| [motorControl_WASD.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/motorControl_WASD/motorControl_WASD.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [motorControl_WASD.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab3-4/task5/motorControl_WASD/motorControl_WASD.ino) | <code> </code> |
 
 </details>
 
@@ -362,7 +362,7 @@
 
 | File                                                                                                                  | Summary                         |
 | ---                                                                                                                   | ---                             |
-| [BLECentral.c](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/BLECentral.c) | <code>► INSERT-TEXT-HERE</code> |
+| [BLECentral.c](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/BLECentral.c) | <code> </code> |
 
 </details>
 
@@ -370,12 +370,12 @@
 
 | File                                                                                                                                      | Summary                         |
 | ---                                                                                                                                       | ---                             |
-| [utils.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble_c/utils.h)           | <code>► INSERT-TEXT-HERE</code> |
-| [simpleble.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble_c/simpleble.h)   | <code>► INSERT-TEXT-HERE</code> |
-| [adapter.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble_c/adapter.h)       | <code>► INSERT-TEXT-HERE</code> |
-| [types.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble_c/types.h)           | <code>► INSERT-TEXT-HERE</code> |
-| [logging.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble_c/logging.h)       | <code>► INSERT-TEXT-HERE</code> |
-| [peripheral.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble_c/peripheral.h) | <code>► INSERT-TEXT-HERE</code> |
+| [utils.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble_c/utils.h)           | <code> </code> |
+| [simpleble.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble_c/simpleble.h)   | <code> </code> |
+| [adapter.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble_c/adapter.h)       | <code> </code> |
+| [types.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble_c/types.h)           | <code> </code> |
+| [logging.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble_c/logging.h)       | <code> </code> |
+| [peripheral.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble_c/peripheral.h) | <code> </code> |
 
 </details>
 
@@ -383,15 +383,15 @@
 
 | File                                                                                                                                            | Summary                         |
 | ---                                                                                                                                             | ---                             |
-| [Utils.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble/Utils.h)                   | <code>► INSERT-TEXT-HERE</code> |
-| [PeripheralSafe.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble/PeripheralSafe.h) | <code>► INSERT-TEXT-HERE</code> |
-| [Peripheral.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble/Peripheral.h)         | <code>► INSERT-TEXT-HERE</code> |
-| [SimpleBLE.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble/SimpleBLE.h)           | <code>► INSERT-TEXT-HERE</code> |
-| [AdapterSafe.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble/AdapterSafe.h)       | <code>► INSERT-TEXT-HERE</code> |
-| [Types.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble/Types.h)                   | <code>► INSERT-TEXT-HERE</code> |
-| [Adapter.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble/Adapter.h)               | <code>► INSERT-TEXT-HERE</code> |
-| [Exceptions.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble/Exceptions.h)         | <code>► INSERT-TEXT-HERE</code> |
-| [Logging.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble/Logging.h)               | <code>► INSERT-TEXT-HERE</code> |
+| [Utils.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble/Utils.h)                   | <code> </code> |
+| [PeripheralSafe.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble/PeripheralSafe.h) | <code> </code> |
+| [Peripheral.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble/Peripheral.h)         | <code> </code> |
+| [SimpleBLE.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble/SimpleBLE.h)           | <code> </code> |
+| [AdapterSafe.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble/AdapterSafe.h)       | <code> </code> |
+| [Types.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble/Types.h)                   | <code> </code> |
+| [Adapter.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble/Adapter.h)               | <code> </code> |
+| [Exceptions.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble/Exceptions.h)         | <code> </code> |
+| [Logging.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/BLE Example/include/simpleble/Logging.h)               | <code> </code> |
 
 </details>
 
@@ -399,12 +399,12 @@
 
 | File                                                                                                                               | Summary                         |
 | ---                                                                                                                                | ---                             |
-| [ARBPi.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task1/ARBPi.h)                         | <code>► INSERT-TEXT-HERE</code> |
-| [serialTest.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task1/serialTest.cpp)           | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task1/ARBPi.cpp)                     | <code>► INSERT-TEXT-HERE</code> |
-| [task1.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task1/task1.py)                       | <code>► INSERT-TEXT-HERE</code> |
-| [serialComms_send.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task1/serialComms_send.py) | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task1/ARBPi.py)                       | <code>► INSERT-TEXT-HERE</code> |
+| [ARBPi.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task1/ARBPi.h)                         | <code> </code> |
+| [serialTest.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task1/serialTest.cpp)           | <code> </code> |
+| [ARBPi.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task1/ARBPi.cpp)                     | <code> </code> |
+| [task1.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task1/task1.py)                       | <code> </code> |
+| [serialComms_send.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task1/serialComms_send.py) | <code> </code> |
+| [ARBPi.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task1/ARBPi.py)                       | <code> </code> |
 
 </details>
 
@@ -412,7 +412,7 @@
 
 | File                                                                                                                                                  | Summary                         |
 | ---                                                                                                                                                   | ---                             |
-| [I2CMux_singlebus.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task1/I2CMux_singlebus/I2CMux_singlebus.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [I2CMux_singlebus.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task1/I2CMux_singlebus/I2CMux_singlebus.ino) | <code> </code> |
 
 </details>
 
@@ -420,7 +420,7 @@
 
 | File                                                                                                                                   | Summary                         |
 | ---                                                                                                                                    | ---                             |
-| [serialComms.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task1/serialComms/serialComms.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [serialComms.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task1/serialComms/serialComms.ino) | <code> </code> |
 
 </details>
 
@@ -428,10 +428,10 @@
 
 | File                                                                                                           | Summary                         |
 | ---                                                                                                            | ---                             |
-| [ARBPi.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task2/ARBPi.h)     | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task2/ARBPi.cpp) | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task2/ARBPi.py)   | <code>► INSERT-TEXT-HERE</code> |
-| [task2.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task2/task2.py)   | <code>► INSERT-TEXT-HERE</code> |
+| [ARBPi.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task2/ARBPi.h)     | <code> </code> |
+| [ARBPi.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task2/ARBPi.cpp) | <code> </code> |
+| [ARBPi.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task2/ARBPi.py)   | <code> </code> |
+| [task2.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task2/task2.py)   | <code> </code> |
 
 </details>
 
@@ -439,7 +439,7 @@
 
 | File                                                                                                                                         | Summary                         |
 | ---                                                                                                                                          | ---                             |
-| [I2CMux_serial.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task2/I2CMux_serial/I2CMux_serial.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [I2CMux_serial.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab2/task2/I2CMux_serial/I2CMux_serial.ino) | <code> </code> |
 
 </details>
 
@@ -447,12 +447,12 @@
 
 | File                                                                                                                                           | Summary                         |
 | ---                                                                                                                                            | ---                             |
-| [obstacle_test.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab9/obstacle_test.py)                         | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab9/ARBPi.h)                                           | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab9/ARBPi.cpp)                                       | <code>► INSERT-TEXT-HERE</code> |
-| [TurtleBot.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab9/TurtleBot.py)                                 | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab9/ARBPi.py)                                         | <code>► INSERT-TEXT-HERE</code> |
-| [speed_conversion_new_test.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab9/speed_conversion_new_test.py) | <code>► INSERT-TEXT-HERE</code> |
+| [obstacle_test.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab9/obstacle_test.py)                         | <code> </code> |
+| [ARBPi.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab9/ARBPi.h)                                           | <code> </code> |
+| [ARBPi.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab9/ARBPi.cpp)                                       | <code> </code> |
+| [TurtleBot.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab9/TurtleBot.py)                                 | <code> </code> |
+| [ARBPi.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab9/ARBPi.py)                                         | <code> </code> |
+| [speed_conversion_new_test.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab9/speed_conversion_new_test.py) | <code> </code> |
 
 </details>
 
@@ -460,14 +460,14 @@
 
 | File                                                                                                                       | Summary                         |
 | ---                                                                                                                        | ---                             |
-| [mask.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab6/mask.py)                       | <code>► INSERT-TEXT-HERE</code> |
-| [blob.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab6/blob.py)                       | <code>► INSERT-TEXT-HERE</code> |
-| [TurtleBot.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab6/TurtleBot.py)             | <code>► INSERT-TEXT-HERE</code> |
-| [test_camera_fps.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab6/test_camera_fps.py) | <code>► INSERT-TEXT-HERE</code> |
-| [aruco_test.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab6/aruco_test.py)           | <code>► INSERT-TEXT-HERE</code> |
-| [test_camera.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab6/test_camera.py)         | <code>► INSERT-TEXT-HERE</code> |
-| [blobhd.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab6/blobhd.py)                   | <code>► INSERT-TEXT-HERE</code> |
-| [gen_aruco_pdf.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab6/gen_aruco_pdf.py)     | <code>► INSERT-TEXT-HERE</code> |
+| [mask.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab6/mask.py)                       | <code> </code> |
+| [blob.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab6/blob.py)                       | <code> </code> |
+| [TurtleBot.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab6/TurtleBot.py)             | <code> </code> |
+| [test_camera_fps.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab6/test_camera_fps.py) | <code> </code> |
+| [aruco_test.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab6/aruco_test.py)           | <code> </code> |
+| [test_camera.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab6/test_camera.py)         | <code> </code> |
+| [blobhd.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab6/blobhd.py)                   | <code> </code> |
+| [gen_aruco_pdf.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab6/gen_aruco_pdf.py)     | <code> </code> |
 
 </details>
 
@@ -475,15 +475,15 @@
 
 | File                                                                                                                                               | Summary                         |
 | ---                                                                                                                                                | ---                             |
-| [Infrared.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/generalControl/Infrared.cpp)             | <code>► INSERT-TEXT-HERE</code> |
-| [Infrared.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/generalControl/Infrared.h)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Motors.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/generalControl/Motors.cpp)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Ultrasonics.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/generalControl/Ultrasonics.cpp)       | <code>► INSERT-TEXT-HERE</code> |
-| [Joystick.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/generalControl/Joystick.cpp)             | <code>► INSERT-TEXT-HERE</code> |
-| [generalControl.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/generalControl/generalControl.ino) | <code>► INSERT-TEXT-HERE</code> |
-| [Joystick.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/generalControl/Joystick.h)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Motors.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/generalControl/Motors.h)                     | <code>► INSERT-TEXT-HERE</code> |
-| [Ultrasonics.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/generalControl/Ultrasonics.h)           | <code>► INSERT-TEXT-HERE</code> |
+| [Infrared.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/generalControl/Infrared.cpp)             | <code> </code> |
+| [Infrared.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/generalControl/Infrared.h)                 | <code> </code> |
+| [Motors.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/generalControl/Motors.cpp)                 | <code> </code> |
+| [Ultrasonics.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/generalControl/Ultrasonics.cpp)       | <code> </code> |
+| [Joystick.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/generalControl/Joystick.cpp)             | <code> </code> |
+| [generalControl.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/generalControl/generalControl.ino) | <code> </code> |
+| [Joystick.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/generalControl/Joystick.h)                 | <code> </code> |
+| [Motors.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/generalControl/Motors.h)                     | <code> </code> |
+| [Ultrasonics.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/generalControl/Ultrasonics.h)           | <code> </code> |
 
 </details>
 
@@ -491,23 +491,23 @@
 
 | File                                                                                                                                                                                    | Summary                         |
 | ---                                                                                                                                                                                     | ---                             |
-| [finite_state_machine_example.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/finite_state_machine_example.py)           | <code>► INSERT-TEXT-HERE</code> |
-| [shape_detection.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/shape_detection.py)                                     | <code>► INSERT-TEXT-HERE</code> |
-| [WASD_control_obstacle_avoidance.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/WASD_control_obstacle_avoidance.py)     | <code>► INSERT-TEXT-HERE</code> |
-| [WASD_control.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/WASD_control.py)                                           | <code>► INSERT-TEXT-HERE</code> |
-| [TurtleBot.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/TurtleBot.py)                                                 | <code>► INSERT-TEXT-HERE</code> |
-| [shape_detect_test.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/shape_detect_test.py)                                 | <code>► INSERT-TEXT-HERE</code> |
-| [wall_follower_with_camera_2.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/wall_follower_with_camera_2.py)             | <code>► INSERT-TEXT-HERE</code> |
-| [showcase.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/showcase.py)                                                   | <code>► INSERT-TEXT-HERE</code> |
-| [wall_follower_with_camera_3_slow.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/wall_follower_with_camera_3_slow.py)   | <code>► INSERT-TEXT-HERE</code> |
-| [WASD_control_obstacle_avoidance_2.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/WASD_control_obstacle_avoidance_2.py) | <code>► INSERT-TEXT-HERE</code> |
-| [wall_follower_fsm.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/wall_follower_fsm.py)                                 | <code>► INSERT-TEXT-HERE</code> |
-| [shape_detect_test_2.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/shape_detect_test_2.py)                             | <code>► INSERT-TEXT-HERE</code> |
-| [aruco_detect_test.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/aruco_detect_test.py)                                 | <code>► INSERT-TEXT-HERE</code> |
-| [wall_follower_with_camera.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/wall_follower_with_camera.py)                 | <code>► INSERT-TEXT-HERE</code> |
-| [wall_follower_with_camera_3.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/wall_follower_with_camera_3.py)             | <code>► INSERT-TEXT-HERE</code> |
-| [threshold_inRange.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/threshold_inRange.py)                                 | <code>► INSERT-TEXT-HERE</code> |
-| [colour_detect_test.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/colour_detect_test.py)                               | <code>► INSERT-TEXT-HERE</code> |
+| [finite_state_machine_example.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/finite_state_machine_example.py)           | <code> </code> |
+| [shape_detection.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/shape_detection.py)                                     | <code> </code> |
+| [WASD_control_obstacle_avoidance.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/WASD_control_obstacle_avoidance.py)     | <code> </code> |
+| [WASD_control.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/WASD_control.py)                                           | <code> </code> |
+| [TurtleBot.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/TurtleBot.py)                                                 | <code> </code> |
+| [shape_detect_test.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/shape_detect_test.py)                                 | <code> </code> |
+| [wall_follower_with_camera_2.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/wall_follower_with_camera_2.py)             | <code> </code> |
+| [showcase.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/showcase.py)                                                   | <code> </code> |
+| [wall_follower_with_camera_3_slow.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/wall_follower_with_camera_3_slow.py)   | <code> </code> |
+| [WASD_control_obstacle_avoidance_2.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/WASD_control_obstacle_avoidance_2.py) | <code> </code> |
+| [wall_follower_fsm.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/wall_follower_fsm.py)                                 | <code> </code> |
+| [shape_detect_test_2.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/shape_detect_test_2.py)                             | <code> </code> |
+| [aruco_detect_test.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/aruco_detect_test.py)                                 | <code> </code> |
+| [wall_follower_with_camera.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/wall_follower_with_camera.py)                 | <code> </code> |
+| [wall_follower_with_camera_3.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/wall_follower_with_camera_3.py)             | <code> </code> |
+| [threshold_inRange.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/threshold_inRange.py)                                 | <code> </code> |
+| [colour_detect_test.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/UCAS_showcase/initial_testing/colour_detect_test.py)                               | <code> </code> |
 
 </details>
 
@@ -515,10 +515,10 @@
 
 | File                                                                                                                     | Summary                         |
 | ---                                                                                                                      | ---                             |
-| [pigpio_example.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab1/pigpio_example.py) | <code>► INSERT-TEXT-HERE</code> |
-| [pigpio_example.c](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab1/pigpio_example.c)   | <code>► INSERT-TEXT-HERE</code> |
-| [task6.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab1/task6.py)                   | <code>► INSERT-TEXT-HERE</code> |
-| [task5.c](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab1/task5.c)                     | <code>► INSERT-TEXT-HERE</code> |
+| [pigpio_example.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab1/pigpio_example.py) | <code> </code> |
+| [pigpio_example.c](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab1/pigpio_example.c)   | <code> </code> |
+| [task6.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab1/task6.py)                   | <code> </code> |
+| [task5.c](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab1/task5.c)                     | <code> </code> |
 
 </details>
 
@@ -526,19 +526,19 @@
 
 | File                                                                                                                         | Summary                         |
 | ---                                                                                                                          | ---                             |
-| [ARBPi.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/ARBPi.h)                         | <code>► INSERT-TEXT-HERE</code> |
-| [task2eight.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/task2eight.py)             | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/ARBPi.cpp)                     | <code>► INSERT-TEXT-HERE</code> |
-| [task2rectangle.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/task2rectangle.py)     | <code>► INSERT-TEXT-HERE</code> |
-| [task3.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/task3.py)                       | <code>► INSERT-TEXT-HERE</code> |
-| [joystickControl.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/joystickControl.py)   | <code>► INSERT-TEXT-HERE</code> |
-| [TurtleBot.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/TurtleBot.py)               | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/ARBPi.py)                       | <code>► INSERT-TEXT-HERE</code> |
-| [task2square.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/task2square.py)           | <code>► INSERT-TEXT-HERE</code> |
-| [task2line.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/task2line.py)               | <code>► INSERT-TEXT-HERE</code> |
-| [infraredSensor.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/infraredSensor.py)     | <code>► INSERT-TEXT-HERE</code> |
-| [task2circle.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/task2circle.py)           | <code>► INSERT-TEXT-HERE</code> |
-| [ultrasoundSensor.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/ultrasoundSensor.py) | <code>► INSERT-TEXT-HERE</code> |
+| [ARBPi.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/ARBPi.h)                         | <code> </code> |
+| [task2eight.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/task2eight.py)             | <code> </code> |
+| [ARBPi.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/ARBPi.cpp)                     | <code> </code> |
+| [task2rectangle.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/task2rectangle.py)     | <code> </code> |
+| [task3.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/task3.py)                       | <code> </code> |
+| [joystickControl.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/joystickControl.py)   | <code> </code> |
+| [TurtleBot.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/TurtleBot.py)               | <code> </code> |
+| [ARBPi.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/ARBPi.py)                       | <code> </code> |
+| [task2square.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/task2square.py)           | <code> </code> |
+| [task2line.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/task2line.py)               | <code> </code> |
+| [infraredSensor.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/infraredSensor.py)     | <code> </code> |
+| [task2circle.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/task2circle.py)           | <code> </code> |
+| [ultrasoundSensor.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/ultrasoundSensor.py) | <code> </code> |
 
 </details>
 
@@ -546,7 +546,7 @@
 
 | File                                                                                                                                      | Summary                         |
 | ---                                                                                                                                       | ---                             |
-| [generalControl.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/generalControl/generalControl.ino) | <code>► INSERT-TEXT-HERE</code> |
+| [generalControl.ino](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Lab8/generalControl/generalControl.ino) | <code> </code> |
 
 </details>
 
@@ -554,11 +554,11 @@
 
 | File                                                                                                               | Summary                         |
 | ---                                                                                                                | ---                             |
-| [ARBPi.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Showcase/ARBPi.h)           | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Showcase/ARBPi.cpp)       | <code>► INSERT-TEXT-HERE</code> |
-| [TurtleBot.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Showcase/TurtleBot.py) | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Showcase/ARBPi.py)         | <code>► INSERT-TEXT-HERE</code> |
-| [showcase.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Showcase/showcase.py)   | <code>► INSERT-TEXT-HERE</code> |
+| [ARBPi.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Showcase/ARBPi.h)           | <code> </code> |
+| [ARBPi.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Showcase/ARBPi.cpp)       | <code> </code> |
+| [TurtleBot.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Showcase/TurtleBot.py) | <code> </code> |
+| [ARBPi.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Showcase/ARBPi.py)         | <code> </code> |
+| [showcase.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/Showcase/showcase.py)   | <code> </code> |
 
 </details>
 
@@ -566,11 +566,11 @@
 
 | File                                                                                                                                            | Summary                         |
 | ---                                                                                                                                             | ---                             |
-| [serialTest.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARBPi library for Pi Serial comms/serialTest.py)   | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARBPi library for Pi Serial comms/ARBPi.h)               | <code>► INSERT-TEXT-HERE</code> |
-| [serialTest.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARBPi library for Pi Serial comms/serialTest.cpp) | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARBPi library for Pi Serial comms/ARBPi.cpp)           | <code>► INSERT-TEXT-HERE</code> |
-| [ARBPi.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARBPi library for Pi Serial comms/ARBPi.py)             | <code>► INSERT-TEXT-HERE</code> |
+| [serialTest.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARBPi library for Pi Serial comms/serialTest.py)   | <code> </code> |
+| [ARBPi.h](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARBPi library for Pi Serial comms/ARBPi.h)               | <code> </code> |
+| [serialTest.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARBPi library for Pi Serial comms/serialTest.cpp) | <code> </code> |
+| [ARBPi.cpp](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARBPi library for Pi Serial comms/ARBPi.cpp)           | <code> </code> |
+| [ARBPi.py](https://github.com/Alexpascual28/rprk_turtlebot_lab_sessions.git/blob/master/ARBPi library for Pi Serial comms/ARBPi.py)             | <code> </code> |
 
 </details>
 
